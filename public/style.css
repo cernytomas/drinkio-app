@@ -478,6 +478,10 @@ li {
     font-weight: 700;
 }
 
+.navbar-brand h2 img {
+    zoom: 38%;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 15px;
     padding-left: 15px;
@@ -1045,7 +1049,7 @@ li {
 }
 
 .contact-form-title h6 {
-    font-size: 18px;
+    font-size: 18px;zoom: 38%;
     margin-bottom: 30px;
 }
 
@@ -1057,6 +1061,13 @@ li {
     border: none;
     border-radius: 0;
     margin-bottom: 30px;
+}
+
+.contact-form input[type=checkbox].form-control  {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    display: inline;
 }
 
 .contact-form textarea.form-control {
