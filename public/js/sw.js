@@ -7,7 +7,7 @@ var urlsToCache = [
     '/js/sw.js',
     '/js/active.js',
     '/js/others/plugins.js',
-    '/js/others/jquery/jquery-2.2.4.min.js',
+    '/js/jquery/jquery-2.2.4.min.js',
     '/js/bootstrap/bootstrap.min.js',
     '/js/bootstrap/popper.min.js',
     '/css/bootstrap/bootstrap.min.css',
