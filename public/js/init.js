@@ -4,7 +4,7 @@
     if ('serviceWorker' in navigator) {
         console.log('Service Worker is supported in your browser')
         /* register method takes in the path of service worker file and returns a promises, which returns the registration object */
-        navigator.serviceWorker.register('./sw.js').then (registration => {
+        navigator.serviceWorker.register('/js/sw.js').then (registration => {
             console.log('Service Worker is registered!')
         })
     } else {
