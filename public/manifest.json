@@ -1,0 +1,15 @@
+{
+  "short_name": "DRINKIO",
+  "name": "Drinkio",
+  "icons": [
+    {
+      "src": "/img/core-img/apple-touch.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#7643ea",
+  "display": "standalone",
+  "theme_color": "#7643ea"
+}
