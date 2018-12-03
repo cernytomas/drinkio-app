@@ -2,7 +2,6 @@ var CACHE_NAME = 'drinkio-cache-v1';
 var urlsToCache = [
     '/index.html',
     '/style.css',
-    '/styles/main.css',
     '/js/init.js',
     '/js/sw.js',
     '/js/active.js',
