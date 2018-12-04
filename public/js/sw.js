@@ -52,6 +52,7 @@ var urlsToCache = [
     '/img/core-img/map.png'
 ];
 
+
 self.addEventListener('install', function(event) {
     console.log('installing');
     // Perform install steps
