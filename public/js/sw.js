@@ -60,7 +60,9 @@ self.addEventListener('install', function(event) {
         caches.open(CACHE_NAME)
             .then(function(cache) {
                 console.log('Opened cache');
-                return cache.addAll(urlsToCache);
+                const res = cache.addAll(urlsToCache);
+                console.log(res);
+                return res;
             }).catch(err => {
                 console.error('Cannot open cache');
                 console.error(err);
