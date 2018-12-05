@@ -54,18 +54,17 @@ var urlsToCache = [
 
 
 self.addEventListener('install', function(event) {
+    const preCache = async () => {
+        try {
+            const cache = await caches.open('static-v1');
+            const res = await cache.addAll(urlsToCache);
+            console.log(res);
+        } catch (err) {
+            console.error('Cannot open cache');
+            console.error(err);
+        }
+    };
     console.log('installing');
     // Perform install steps
-    event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then(function(cache) {
-                console.log('Opened cache');
-                const res = cache.addAll(urlsToCache);
-                console.log(res);
-                return res;
-            }).catch(err => {
-                console.error('Cannot open cache');
-                console.error(err);
-        })
-    );
+    event.waitUntil(preCache());
 });
